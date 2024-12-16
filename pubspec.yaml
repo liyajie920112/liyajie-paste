@@ -1,0 +1,48 @@
+name: clipboard_history
+description: A clipboard history manager for macOS.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.6.0 <4.0.0'
+  flutter: '>=3.16.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # 状态管理
+  flutter_riverpod: ^2.4.9
+  # 数据持久化
+  isar: ^3.1.0
+  isar_flutter_libs: ^3.1.0
+  # 窗口管理
+  window_manager: ^0.3.7
+  # 系统托盘
+  tray_manager: ^0.2.1
+  # 路由管理
+  auto_route: ^7.8.4
+  # 数据类生成
+  freezed_annotation: ^2.4.1
+  json_annotation: ^4.8.1
+  # Riverpod 注解
+  riverpod_annotation: ^2.3.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  # 代码生成
+  build_runner: ^2.4.7
+  freezed: ^2.4.6
+  json_serializable: ^6.7.1
+  auto_route_generator: ^7.3.2
+  isar_generator: ^3.1.0
+  riverpod_generator: ^2.3.9
+  # Lint
+  flutter_lints: ^3.0.1
+
+flutter:
+  uses-material-design: true
+platforms:
+  macos:
+    enabled: true
